@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+.container {
+    height: 100%;
+}
+
+
+
+.layout {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
+
+.imageDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.img1 {
+    margin-top: 100px;
+    height: 600px;
+    width: 350px;
+    object-fit: contain;
+    justify-content: flex-start;
+
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 100px;
+}
+
+
+
+.headline h1 {
+    font-family: 'heebo';
+    color: #FDBD03;
+    font-size: 54px;
+}
+
+.headline p {
+    font-family: 'heebo';
+    color: #020253;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form label {
+    font-family: 'heebo';
+    font-weight: bold;
+}
+
+form input {
+    height: 30px;
+    width: 250px;
+    background-color: #E5EEFF;
+    border: 2px;
+    box-shadow: 0px 4px #FDBD03;
+
+}
+
+.inputcolumn,
+.inputcolumn1 {
+    padding: 15px;
+}
+
+.inputcolumn1 textarea {
+    height: 70px;
+    width: 350px;
+    resize: none;
+    background-color: #E5EEFF;
+    box-shadow: 0px 4px #FDBD03;
+
+}
+
+
+
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    height: 35px;
+    width: 110px;
+
+    background-color: #FDBD03;
+    border: none;
+    font-family: 'heebo';
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.links {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+
+
+    gap: 20px;
+
+}
+
+@media (max-width: 576px) {
+    .layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imageDiv,
+    .myForm {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .img1 {
+        height: 50%;
+        width: 50%;
+        margin-top: 20px;
+    }
+
+
+
+
+    .headline h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .headline p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    form input {
+        width: 350px;
+    }
+
+    button {
+        width: 350px;
+        height: 50px;
+        margin-right: 15px;
+
+    }
+
+    .links {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+
+
+}

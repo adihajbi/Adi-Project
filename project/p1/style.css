@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: 'heebo';
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#pic {
+    display: none;
+}
+
+#pic-div {
+    width: 55vw;
+
+    height: 100vh;
+    background-image: url(./assets/Coffee@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    position: absolute;
+    left: 0;
+
+
+}
+
+#right {
+    width: 45vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#form-div {
+    width: 60%;
+    height: fit-content;
+}
+
+
+h1 {
+    color: #020253;
+    font-size: 43px;
+}
+
+p {
+    font-size: 2rem;
+    color: #020253;
+}
+
+
+label {
+    color: #020253;
+    margin: 10px 0px 10px 0px;
+}
+
+input {
+    border: none;
+    border-bottom: 3px solid #020253;
+    background-color: #E5EEFF;
+    height: 50px;
+    width: 27vw;
+    margin: 10px 0px 10px 0px;
+}
+
+button {
+    color: white;
+    background-color: #020253;
+    border: none;
+    height: 50px;
+    width: 27vw;
+    margin: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 576px) {
+
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #pic-div {
+        width: 100%;
+        height: 150px;
+    }
+
+    #right {
+
+        width: 100%;
+        padding: 1.5rem;
+        margin-top: 120px;
+        justify-content: right;
+
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    #pic-div {
+        width: 100%;
+        height: 230px;
+        background-position: center;
+    }
+
+    #right {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    input,
+    button {
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+    }
+}

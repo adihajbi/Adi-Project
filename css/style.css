@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+
+    margin: 0;
+    padding: 0;
+}
+
+#hamburger {
+    display: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    background-color: whitesmoke;
+    z-index: 4;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-family: 'Marck Script';
+    font-size: 32px;
+    font-weight: 100;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__links a {
+    font-family: 'heebo';
+    font-size: 22px;
+    color: red;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 900;
+}
+
+.nav__links a:hover {
+    color: #0088a9;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    margin-top: 70px;
+    align-items: center;
+    background-image: url("../assets/gradient.jpg");
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+p {
+    font-family: 'heebo';
+    font-size: 22px;
+    color: black;
+}
+
+h1 {
+    font-family: 'heebo';
+    font-size: 36px;
+    color: black;
+    text-decoration: underline;
+}
+
+img[src$=".png"] {
+    mix-blend-mode: multiply;
+}
+
+.htmlcss {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#about p {
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50;
+
+    color: white;
+    padding: 15px 28px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px 5px 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#gallery h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 450px;
+    height: 450px;
+    margin: 10px;
+    box-shadow: 1px 1px 16px -2px;
+    border-radius: 14px;
+}
+
+.box h2 {
+    text-align: center;
+    font-family: 'heebo';
+    font-size: 22px;
+    color: black;
+}
+
+.box p {
+    text-align: center;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    width: 450px;
+    height: 220px;
+}
+
+.btn1 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact_container {
+    height: 600px;
+    width: 100%;
+    background-color: #3A3A3A;
+    margin-top: 50px;
+    display: flex;
+}
+
+.contactRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+}
+
+.headline h1 {
+    font-family: 'heebo';
+    font-size: 36px;
+    color: white;
+}
+
+.headline p {
+    font-family: 'heebo';
+    font-size: 20px;
+    color: white;
+}
+
+.contactLeft {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../assets/Rectangle\ 41.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input {
+    width: 400px;
+    height: 30px;
+}
+
+#contactForm label {
+    font-family: 'heebo';
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: #1AE0EC;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: 'heebo';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 160px;
+    height: 30px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: #1AE0EC;
+}
+
+.sectionbottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.phonelogo,
+.instalogo,
+.whatsapplogo,
+.wazelogo {
+    height: 70px;
+    width: 70px;
+}
+
+.phone1,
+.insta1,
+.whatsapp1,
+.waze1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phonelogo {
+    mix-blend-mode: multiply;
+}
+
+.whatsapp1 {
+    mix-blend-mode: multiply;
+}
+
+
+
+
+/* media css */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .logo p {
+        font-size: 24px;
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: whitesmoke;
+        text-align: center;
+        z-index: 5;
+    }
+
+    #hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked~.nav__links {
+        display: flex;
+    }
+
+    .nav__links a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #main {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6 {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact_container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contactRight,
+    .contactLeft {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagebgc {
+        width: 100%;
+    }
+
+    #contactForm input {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sectionbottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #1AE0EC;
+
+        padding: 20px 0;
+    }
+
+    .phone1,
+    .insta1,
+    .whatsapp1,
+    .waze1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .phonelogo,
+    .instalogo,
+    .whatsapplogo,
+    .wazelogo {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+
+    }
+
+    #contact {
+        margin-top: 30px;
+    }
+
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+.container {
+    height: 100vh;
+
+
+}
+
+.texth1 {
+    color: #D3E10E;
+    font-family: 'heebo';
+    font-size: 62px;
+}
+
+.text p {
+    font-family: 'heebo';
+    font-size: 24px;
+}
+
+.pic-div {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+
+}
+
+.top-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: visible;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    z-index: 20;
+    position: absolute;
+
+
+}
+
+
+.forme {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: -15px;
+}
+
+input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0px 4px #007BFF;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0 20px;
+
+    margin-top: 12px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 576px) {
+    .texth1 {
+        font-size: 48px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .text p {
+        font-size: 18px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .pic-div {
+        height: 40vh;
+
+    }
+
+    .forme {
+        flex-direction: column;
+        margin-top: 60px;
+
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    input {
+        width: 100%;
+
+    }
+}
